@@ -1,0 +1,64 @@
+nav {
+  .content-nav {
+    // the desktop version of the navbar
+    @media (min-width: 1200px) {
+      div.right-nav {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+        position: inherit;
+        background: transparent;
+        margin-top: inherit;
+        width: auto;
+
+        li {
+          border-bottom: none;
+          width: inherit;
+          position: relative;
+        }
+
+        li a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $text-white;
+          font-weight: 600;
+          font-size: 15px;
+          letter-spacing: 0.1px;
+        }
+
+        li span img {
+          vertical-align: -9px;
+          margin-left: -9px;
+          filter: invert(0%) sepia(1%) saturate(1%) hue-rotate(285deg)
+            brightness(106%) contrast(101%);
+          float: inherit;
+        }
+      }
+
+      div.left-desktop {
+        display: flex;
+        gap: 0.7rem;
+        margin-left: auto;
+        position: inherit;
+
+        .contact-sales {
+          @include btn-nav-desktop($text-white, transparent);
+          text-transform: uppercase;
+          outline: none;
+        }
+
+        .free-trial {
+          @include btn-nav-desktop(none, $background-green);
+          text-transform: uppercase;
+          outline: none;
+        }
+      }
+    }
+  }
+}
