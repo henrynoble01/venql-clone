@@ -1,0 +1,20 @@
+@mixin btn-nav($color) {
+  border: 2px solid $color;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: white;
+  font-weight: 600;
+}
+
+@mixin btn-nav-desktop($color, $background) {
+  border: 2px solid $color;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: white;
+  font-weight: 600;
+  background: $background;
+}

@@ -1,0 +1,104 @@
+// navbar.scss
+
+// nav background color
+nav {
+  background-color: #3a4953;
+
+  //   the content inside the nav
+  .content-nav {
+    display: flex;
+    gap: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    // the mobile version of the navbar
+    .right-nav {
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+
+      button {
+        @include btn-nav(#fff);
+        background: transparent;
+        text-transform: uppercase;
+      }
+
+      .harmburger-icon {
+        margin-top: 10px;
+        span {
+          display: none;
+        }
+
+        @media (min-width: 576px) {
+          span {
+            display: inline-flex;
+            color: $text-white;
+            vertical-align: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        }
+
+        img {
+          display: inline-block;
+        }
+      }
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .left-desktop {
+      display: none;
+    }
+
+    // the desktop version of the navbar
+    @media (min-width: 1200px) {
+      div.right-nav {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+
+        li a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $text-white;
+          font-weight: 600;
+          font-size: 15px;
+        }
+
+        li span img {
+          vertical-align: -9px;
+          margin-left: -9px;
+        }
+      }
+
+      div.left-desktop {
+        display: flex;
+        gap: 0.7rem;
+        margin-left: auto;
+
+        .contact-sales {
+          @include btn-nav-desktop($text-white, transparent);
+          text-transform: uppercase;
+          outline: none;
+        }
+
+        .free-trial {
+          @include btn-nav-desktop(none, $background-green);
+          text-transform: uppercase;
+          outline: none;
+        }
+      }
+    }
+  }
+}
