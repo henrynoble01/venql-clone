@@ -49,56 +49,51 @@ nav {
     }
 
     .nav-links {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      background-color: $background-white;
+      position: absolute;
+      top: 65px;
+      left: 30px;
+      margin-top: 50px;
+      width: 94%;
+
+      li {
+        border-bottom: 2.5px solid #f4f8fc;
+        width: 100%;
+      }
+
+      li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $text-gray;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+      }
+
+      li img {
+        filter: invert(100%) sepia(10%) saturate(7458%) hue-rotate(278deg)
+          brightness(116%) contrast(109%);
+        vertical-align: -9px;
+        float: right;
+      }
     }
 
     .left-desktop {
       display: none;
-    }
-
-    // the desktop version of the navbar
-    @media (min-width: 1200px) {
-      div.right-nav {
-        display: none;
-      }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        list-style: none;
-
-        li a {
-          text-transform: uppercase;
-          text-decoration: none;
-          color: $text-white;
-          font-weight: 600;
-          font-size: 15px;
-        }
-
-        li span img {
-          vertical-align: -9px;
-          margin-left: -9px;
-        }
-      }
-
-      div.left-desktop {
-        display: flex;
-        gap: 0.7rem;
-        margin-left: auto;
-
-        .contact-sales {
-          @include btn-nav-desktop($text-white, transparent);
-          text-transform: uppercase;
-          outline: none;
-        }
-
-        .free-trial {
-          @include btn-nav-desktop(none, $background-green);
-          text-transform: uppercase;
-          outline: none;
-        }
-      }
+      //   display: flex;
+      //   flex-direction: column;
+      //   gap: 10px;
+      //   list-style: none;
+      //   background-color: $background-white;
+      //   position: absolute;
+      //   bottom: 165px;
+      //   left: 30px;
+      //   margin-top: 50px;
+      //   width: 94%;
     }
   }
 }
