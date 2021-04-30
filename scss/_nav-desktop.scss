@@ -7,14 +7,15 @@ nav {
       }
 
       div.toggle {
-        width: inherit;
+        width: 90vw;
         display: flex;
         height: auto;
-      }
+        position: inherit;
 
-      .toogle.nav-toogle {
-        // display: none;
-        // height: 100vh;
+        &.nav-toggle {
+          height: auto;
+          margin-left: auto;
+        }
       }
 
       .nav-links {
@@ -59,6 +60,7 @@ nav {
         margin-left: auto;
         position: inherit;
         width: auto;
+        margin-top: 0;
 
         .contact-sales {
           @include btn-nav-desktop($text-white, transparent);

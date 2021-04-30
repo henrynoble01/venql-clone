@@ -25,6 +25,11 @@ nav {
         text-transform: uppercase;
       }
 
+      .free-trial-btn {
+        display: none;
+        transition: all 2s ease-in-out;
+      }
+
       .harmburger-icon {
         margin-top: 10px;
         span {
@@ -49,14 +54,22 @@ nav {
     }
 
     .toggle {
+      //   background-color: blue !important;
+      overflow: hidden;
+      position: absolute;
+      top: 100px;
+      width: 98%;
+      left: 10px;
+      //   default nav for mobile nav
       height: 0;
       overflow: hidden;
-      background-color: blue !important;
-      //   display: none;
+      transition: all 0.8s ease-in-out;
 
-      //   &.nav-toogle {
-      //     display: block !important;
-      //   }
+      &.nav-toggle {
+        height: 87vh;
+        overflow: auto;
+        transition: all 1.1s ease-in-out;
+      }
     }
 
     .nav-links {
@@ -65,10 +78,6 @@ nav {
       gap: 10px;
       list-style: none;
       background-color: $background-white;
-      position: absolute;
-      top: 65px;
-      left: 30px;
-      margin-top: 50px;
       width: 94%;
 
       li {
@@ -96,12 +105,8 @@ nav {
     .left-desktop {
       display: flex;
       flex-direction: column-reverse;
-
+      margin-top: 50px;
       gap: 10px;
-      position: absolute;
-      bottom: 16rem;
-      left: 30px;
-      //   margin-top: 50px;
       width: 95%;
 
       .free-trial {
@@ -131,6 +136,18 @@ nav {
         display: flex;
         flex-direction: row-reverse;
         bottom: 20rem;
+        width: 95%;
+
+        .free-trial {
+          width: 90%;
+        }
+        .contact-sales {
+          width: 90%;
+        }
+
+        .get-support {
+          width: 90%;
+        }
       }
     }
   }

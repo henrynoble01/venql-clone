@@ -43,6 +43,12 @@ nav .content-nav .right-nav button {
   text-transform: uppercase;
 }
 
+nav .content-nav .right-nav .free-trial-btn {
+  display: none;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
 nav .content-nav .right-nav .harmburger-icon {
   margin-top: 10px;
 }
@@ -69,9 +75,22 @@ nav .content-nav .right-nav .harmburger-icon img {
 }
 
 nav .content-nav .toggle {
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  width: 98%;
+  left: 10px;
   height: 0;
   overflow: hidden;
-  background-color: blue !important;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+nav .content-nav .toggle.nav-toggle {
+  height: 87vh;
+  overflow: auto;
+  -webkit-transition: all 1.1s ease-in-out;
+  transition: all 1.1s ease-in-out;
 }
 
 nav .content-nav .nav-links {
@@ -85,10 +104,6 @@ nav .content-nav .nav-links {
   gap: 10px;
   list-style: none;
   background-color: #ffffff;
-  position: absolute;
-  top: 65px;
-  left: 30px;
-  margin-top: 50px;
   width: 94%;
 }
 
@@ -121,10 +136,8 @@ nav .content-nav .left-desktop {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-top: 50px;
   gap: 10px;
-  position: absolute;
-  bottom: 16rem;
-  left: 30px;
   width: 95%;
 }
 
@@ -186,6 +199,16 @@ nav .content-nav .left-desktop .get-support {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     bottom: 20rem;
+    width: 95%;
+  }
+  nav .content-nav .left-desktop .free-trial {
+    width: 90%;
+  }
+  nav .content-nav .left-desktop .contact-sales {
+    width: 90%;
+  }
+  nav .content-nav .left-desktop .get-support {
+    width: 90%;
   }
 }
 
@@ -194,11 +217,16 @@ nav .content-nav .left-desktop .get-support {
     display: none;
   }
   nav .content-nav div.toggle {
-    width: inherit;
+    width: 90vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: auto;
+    position: inherit;
+  }
+  nav .content-nav div.toggle.nav-toggle {
+    height: auto;
+    margin-left: auto;
   }
   nav .content-nav .nav-links {
     display: -webkit-box;
@@ -250,6 +278,7 @@ nav .content-nav .left-desktop .get-support {
     margin-left: auto;
     position: inherit;
     width: auto;
+    margin-top: 0;
   }
   nav .content-nav div.left-desktop .contact-sales {
     border: 2px solid #fff;
