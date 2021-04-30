@@ -6,6 +6,17 @@ nav {
         display: none;
       }
 
+      div.toggle {
+        width: inherit;
+        display: flex;
+        height: auto;
+      }
+
+      .toogle.nav-toogle {
+        // display: none;
+        // height: 100vh;
+      }
+
       .nav-links {
         display: flex;
         flex-direction: row;
@@ -43,9 +54,11 @@ nav {
 
       div.left-desktop {
         display: flex;
+        flex-direction: row;
         gap: 0.7rem;
         margin-left: auto;
         position: inherit;
+        width: auto;
 
         .contact-sales {
           @include btn-nav-desktop($text-white, transparent);
@@ -57,6 +70,10 @@ nav {
           @include btn-nav-desktop(none, $background-green);
           text-transform: uppercase;
           outline: none;
+        }
+
+        .get-support {
+          display: none;
         }
       }
     }

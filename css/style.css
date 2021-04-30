@@ -68,6 +68,12 @@ nav .content-nav .right-nav .harmburger-icon img {
   display: inline-block;
 }
 
+nav .content-nav .toggle {
+  height: 0;
+  overflow: hidden;
+  background-color: blue !important;
+}
+
 nav .content-nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,12 +114,91 @@ nav .content-nav .nav-links li img {
 }
 
 nav .content-nav .left-desktop {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 10px;
+  position: absolute;
+  bottom: 16rem;
+  left: 30px;
+  width: 95%;
+}
+
+nav .content-nav .left-desktop .free-trial {
+  border: 2px solid #41af4b;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #fff;
+  font-weight: 600;
+  background: #41af4b;
+  font-size: 16px;
+  outline: none;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+nav .content-nav .left-desktop .contact-sales {
+  border: 2px solid #41af4b;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #41af4b;
+  font-weight: 600;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+nav .content-nav .left-desktop .get-support {
+  border: 2px solid #41af4b;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #41af4b;
+  font-weight: 600;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  nav .content-nav .left-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    bottom: 20rem;
+  }
 }
 
 @media (min-width: 1200px) {
   nav .content-nav div.right-nav {
     display: none;
+  }
+  nav .content-nav div.toggle {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
   }
   nav .content-nav .nav-links {
     display: -webkit-box;
@@ -157,33 +242,43 @@ nav .content-nav .left-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 0.7rem;
     margin-left: auto;
     position: inherit;
+    width: auto;
   }
   nav .content-nav div.left-desktop .contact-sales {
     border: 2px solid #fff;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     color: white;
     font-weight: 600;
     background: transparent;
+    font-size: 13px;
     text-transform: uppercase;
     outline: none;
   }
   nav .content-nav div.left-desktop .free-trial {
     border: 2px solid none;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     color: white;
     font-weight: 600;
     background: #41af4b;
+    font-size: 13px;
     text-transform: uppercase;
     outline: none;
+  }
+  nav .content-nav div.left-desktop .get-support {
+    display: none;
   }
 }
 

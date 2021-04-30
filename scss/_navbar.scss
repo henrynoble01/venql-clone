@@ -48,6 +48,17 @@ nav {
       }
     }
 
+    .toggle {
+      height: 0;
+      overflow: hidden;
+      background-color: blue !important;
+      //   display: none;
+
+      //   &.nav-toogle {
+      //     display: block !important;
+      //   }
+    }
+
     .nav-links {
       display: flex;
       flex-direction: column;
@@ -83,17 +94,44 @@ nav {
     }
 
     .left-desktop {
-      display: none;
-      //   display: flex;
-      //   flex-direction: column;
-      //   gap: 10px;
-      //   list-style: none;
-      //   background-color: $background-white;
-      //   position: absolute;
-      //   bottom: 165px;
-      //   left: 30px;
+      display: flex;
+      flex-direction: column-reverse;
+
+      gap: 10px;
+      position: absolute;
+      bottom: 16rem;
+      left: 30px;
       //   margin-top: 50px;
-      //   width: 94%;
+      width: 95%;
+
+      .free-trial {
+        @include btn-nav-mobile(
+          $text-white,
+          $background-green,
+          $background-green
+        );
+        display: block;
+        width: 100%;
+      }
+      .contact-sales {
+        @include btn-nav-mobile($text-green, $border-green, transparent);
+        display: block;
+        width: 100%;
+      }
+
+      .get-support {
+        @include btn-nav-mobile($text-green, $border-green, transparent);
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .left-desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        bottom: 20rem;
+      }
     }
   }
 }

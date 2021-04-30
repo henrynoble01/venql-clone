@@ -10,11 +10,26 @@
 
 @mixin btn-nav-desktop($color, $background) {
   border: 2px solid $color;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   color: white;
   font-weight: 600;
   background: $background;
+  font-size: 13px;
+}
+
+@mixin btn-nav-mobile($text, $border, $background) {
+  border: 2px solid $border;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: $text;
+  font-weight: 600;
+  background: $background;
+  font-size: 16px;
+  outline: none;
+  text-transform: uppercase;
 }
