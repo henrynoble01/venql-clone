@@ -12,19 +12,16 @@
     // mobile version of the image
     .img-section {
       .mobile-img {
-        width: 0;
         display: none;
 
         img {
           width: 0;
-          // margin-top: 25px;
         }
       }
 
       //   desktop version of the image
       .desktop-img {
         display: block;
-        // position: relative;
         z-index: -1;
         width: 100%;
         height: 100%;
@@ -32,7 +29,16 @@
         img {
           width: 179%;
           height: 100%;
-          margin-left: -300px;
+          margin-left: -45%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .desktop-img {
+          img {
+            width: 100%;
+            margin-left: 0;
+          }
         }
       }
     }
@@ -40,8 +46,7 @@
     // this is the first text section that the backgound is white
     .text-section {
       position: absolute;
-      //   z-index: -2;
-      top: 80px;
+      top: 20px;
       //
       padding: 20px;
       text-align: left;
@@ -70,42 +75,77 @@
 
         p {
           font-size: 18px;
-          //   margin-top: 20px;
           font-weight: 500;
           color: $text-gray;
         }
       }
+
+      @media (min-width: 1143px) {
+        .text {
+          width: 85%;
+        }
+      }
     }
 
-    // this is the second text section that the background is  deep blue
+    @media (min-width: 1200px) {
+      .text-section {
+        top: 13%;
+        //
+        width: 50%;
+
+        h2 {
+          color: $text-dark;
+          font-size: 3.5rem;
+          font-weight: 700;
+        }
+
+        .text {
+          //
+
+          button {
+            @include btn-mobile($text-white, $background-green);
+            width: 70%;
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+        }
+
+        @media (min-width: 1143px) {
+          .text {
+            width: 85%;
+          }
+        }
+      }
+    }
+
+    // this is the second text section that the background is  deep blue / purple
     .fun-section {
-      //   display: none;
       position: absolute;
-      //   z-index: ;
-      top: 400px;
+      top: 300px;
       right: 50px;
-      //   width: 50%;
-      //   width: 310px;
       //
       width: 310px;
-      height: 250px;
+      height: 290px;
 
       //
       background-color: $background-deep-blue;
       border-radius: 50%;
       color: $text-white;
-      padding: 20px 5px;
+      padding: 40px 10px;
       text-align: center;
 
       .desktop-heading {
         display: block;
+        font-size: 2rem;
+        margin-bottom: 10px;
       }
 
       .mobile-heading {
         display: none;
-        margin-bottom: 20px;
-        font-size: 1.9rem;
-        font-weight: 700;
       }
 
       .info {
@@ -114,11 +154,11 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        text-align: center;
 
         button {
-          //   display: none;
           @include btn-mobile($text-white, $background-green);
-          width: 50%;
+          width: 60%;
           font-weight: 700;
           font-size: 1.2rem;
           margin-bottom: 20px;
@@ -129,7 +169,8 @@
         }
         .desktop-text {
           display: block;
-          width: 80%;
+          width: 90%;
+          letter-spacing: 0.5px;
         }
       }
     }
