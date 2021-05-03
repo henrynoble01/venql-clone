@@ -1,8 +1,10 @@
-@import "resets";
-@import "variable";
-@import "mixings";
-@import "navbar";
-@import "nav-desktop";
+@import "./resets";
+@import "./variable";
+@import "./mixings";
+@import "./navbar/navbar";
+@import "./navbar/nav-desktop";
+@import "./first-section/first-mobile";
+@import "./first-section/first-desktop";
 
 body {
   .container {
@@ -13,23 +15,23 @@ body {
     margin-left: auto;
   }
 
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }
+  //   @media (min-width: 576px) {
+  //     .container {
+  //       max-width: 540px;
+  //     }
+  //   }
 
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     .container {
+  //       max-width: 720px;
+  //     }
+  //   }
 
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
+  //   @media (min-width: 992px) {
+  //     .container {
+  //       max-width: 960px;
+  //     }
+  //   }
 
   @media (min-width: 1200px) {
     .container {

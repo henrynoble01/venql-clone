@@ -2,7 +2,15 @@
 
 // nav background color
 nav {
-  background-color: #3a4953;
+  background: #3a4953;
+  background-color: rgba($color: #3a4953, $alpha: 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &.nav-toggle {
+    background-color: rgba($color: #3a4953, $alpha: 1) !important;
+  }
 
   //   the content inside the nav
   .content-nav {
@@ -36,7 +44,7 @@ nav {
           display: none;
         }
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
           span {
             display: inline-flex;
             color: $text-white;
@@ -57,17 +65,19 @@ nav {
       //   background-color: blue !important;
       overflow: hidden;
       position: absolute;
-      top: 100px;
-      width: 98%;
-      left: 10px;
+      background-color: $background-white;
+      top: 70px;
+      width: 100%;
+      left: 0;
+      padding-left: 30px;
       //   default nav for mobile nav
       height: 0;
       overflow: hidden;
       transition: all 0.8s ease-in-out;
 
       &.nav-toggle {
-        height: 87vh;
-        overflow: auto;
+        height: 92vh;
+        overflow: hidden;
         transition: all 1.1s ease-in-out;
       }
     }

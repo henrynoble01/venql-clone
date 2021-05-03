@@ -9,7 +9,15 @@
 }
 
 nav {
-  background-color: #3a4953;
+  background: #3a4953;
+  background-color: rgba(58, 73, 83, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav.nav-toggle {
+  background-color: #3a4953 !important;
 }
 
 nav .content-nav {
@@ -57,7 +65,7 @@ nav .content-nav .right-nav .harmburger-icon span {
   display: none;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   nav .content-nav .right-nav .harmburger-icon span {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -77,9 +85,11 @@ nav .content-nav .right-nav .harmburger-icon img {
 nav .content-nav .toggle {
   overflow: hidden;
   position: absolute;
-  top: 100px;
-  width: 98%;
-  left: 10px;
+  background-color: #ffffff;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  padding-left: 30px;
   height: 0;
   overflow: hidden;
   -webkit-transition: all 0.8s ease-in-out;
@@ -87,8 +97,8 @@ nav .content-nav .toggle {
 }
 
 nav .content-nav .toggle.nav-toggle {
-  height: 87vh;
-  overflow: auto;
+  height: 92vh;
+  overflow: hidden;
   -webkit-transition: all 1.1s ease-in-out;
   transition: all 1.1s ease-in-out;
 }
@@ -223,6 +233,7 @@ nav .content-nav .left-desktop .get-support {
     display: flex;
     height: auto;
     position: inherit;
+    background: transparent;
   }
   nav .content-nav div.toggle.nav-toggle {
     height: auto;
@@ -311,30 +322,56 @@ nav .content-nav .left-desktop .get-support {
   }
 }
 
+section.section-1 {
+  margin-top: 75px;
+}
+
+section.section-1 .img-section .mobile-img {
+  width: 100%;
+}
+
+section.section-1 .img-section .mobile-img img {
+  width: 100%;
+}
+
+section.section-1 .img-section .desktop-img {
+  display: none;
+}
+
+section.section-1 .text-section {
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+section.section-1 .text-section h2 {
+  color: #3a4953;
+  font-size: 33px;
+}
+
+section.section-1 .text-section button {
+  border: none;
+  padding: 15px;
+  color: #fff;
+  background-color: #41af4b;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+section.section-1 .text-section p {
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #485660;
+}
+
 body .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  body .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  body .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  body .container {
-    max-width: 960px;
-  }
 }
 
 @media (min-width: 1200px) {

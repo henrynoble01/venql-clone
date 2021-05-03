@@ -1,0 +1,42 @@
+section.section-1 {
+  margin-top: 75px;
+  //   background-color: blue;
+
+  .img-section {
+    .mobile-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        // margin-top: 25px;
+      }
+    }
+    .desktop-img {
+      display: none;
+    }
+  }
+
+  .text-section {
+    // background: blue;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+
+    h2 {
+      color: $text-dark;
+      font-size: 33px;
+    }
+
+    button {
+      @include btn-mobile($text-white, $background-green);
+      width: 100%;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 20px;
+      font-weight: 600;
+      color: $text-gray;
+    }
+  }
+}
