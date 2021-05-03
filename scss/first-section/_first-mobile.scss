@@ -25,11 +25,14 @@ section.section-1 {
     h2 {
       color: $text-dark;
       font-size: 33px;
+      margin-bottom: 20px;
     }
 
     button {
       @include btn-mobile($text-white, $background-green);
       width: 100%;
+      font-weight: 700;
+      font-size: 1.2rem;
     }
 
     p {
@@ -37,6 +40,37 @@ section.section-1 {
       margin-top: 20px;
       font-weight: 600;
       color: $text-gray;
+    }
+  }
+
+  .fun-section {
+    background-color: $background-deep-blue;
+    color: $text-white;
+    padding: 50px 20px;
+    text-align: center;
+
+    .desktop-heading {
+      display: none;
+    }
+
+    .mobile-heading {
+      margin-bottom: 20px;
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+
+    .info {
+      button {
+        @include btn-mobile($text-white, $background-green);
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .desktop-text {
+        display: none;
+      }
     }
   }
 }

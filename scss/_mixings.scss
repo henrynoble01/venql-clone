@@ -36,7 +36,7 @@
 
 @mixin btn-mobile($color, $background) {
   border: none;
-  padding: 15px;
+  padding: 10px 15px;
   color: $color;
   background-color: $background;
   font-size: 16px;

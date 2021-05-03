@@ -1,0 +1,137 @@
+//  @media (min-width: 768px) = tablet
+// @media (min-width: 1200px) = desktop
+// @import '../../img/girl-desktop.png'
+
+@media (min-width: 768px) {
+  section.section-1 {
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+
+    // mobile version of the image
+    .img-section {
+      .mobile-img {
+        width: 0;
+        display: none;
+
+        img {
+          width: 0;
+          // margin-top: 25px;
+        }
+      }
+
+      //   desktop version of the image
+      .desktop-img {
+        display: block;
+        // position: relative;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 179%;
+          height: 100%;
+          margin-left: -300px;
+        }
+      }
+    }
+
+    // this is the first text section that the backgound is white
+    .text-section {
+      position: absolute;
+      //   z-index: -2;
+      top: 80px;
+      //
+      padding: 20px;
+      text-align: left;
+      margin: 20px 0;
+      margin: initial;
+      width: 50%;
+
+      h2 {
+        color: $text-dark;
+        font-size: 33px;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+
+        button {
+          @include btn-mobile($text-white, $background-green);
+          width: 90%;
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 18px;
+          //   margin-top: 20px;
+          font-weight: 500;
+          color: $text-gray;
+        }
+      }
+    }
+
+    // this is the second text section that the background is  deep blue
+    .fun-section {
+      //   display: none;
+      position: absolute;
+      //   z-index: ;
+      top: 400px;
+      right: 50px;
+      //   width: 50%;
+      //   width: 310px;
+      //
+      width: 310px;
+      height: 250px;
+
+      //
+      background-color: $background-deep-blue;
+      border-radius: 50%;
+      color: $text-white;
+      padding: 20px 5px;
+      text-align: center;
+
+      .desktop-heading {
+        display: block;
+      }
+
+      .mobile-heading {
+        display: none;
+        margin-bottom: 20px;
+        font-size: 1.9rem;
+        font-weight: 700;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+          //   display: none;
+          @include btn-mobile($text-white, $background-green);
+          width: 50%;
+          font-weight: 700;
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+
+        .mobile-text {
+          display: none;
+        }
+        .desktop-text {
+          display: block;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
