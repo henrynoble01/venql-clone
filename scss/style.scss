@@ -5,12 +5,14 @@
 @import "./navbar/nav-desktop";
 @import "./first-section/first-mobile";
 @import "./first-section/first-desktop";
+@import "./second-section/second-mobile";
+@import "./second-section/second-desktop";
 
 body {
   .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }

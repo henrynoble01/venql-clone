@@ -1,0 +1,57 @@
+// section two mobile section
+//  @media (min-width: 768px) = tablet
+// @media (min-width: 1200px) = desktop
+
+.section-2 {
+  margin: 30px auto;
+
+  //   where the stars reviews are
+  .stars-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    gap: 1rem;
+    text-align: center;
+
+    //contains the stars and the text
+    .stars-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin-bottom: 20px;
+
+      //   .stars-imgs{
+      //       img{
+
+      //       }
+      //   }
+
+      //   contains the text
+      .stars-reviews {
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          font-style: italic;
+          color: rgba($color: $text-light-gray, $alpha: 1);
+        }
+      }
+    }
+
+    @media (min-width: 320px) {
+      .stars-item {
+        width: 40%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .stars-item {
+        width: 20%;
+      }
+    }
+  }
+}

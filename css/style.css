@@ -5,7 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Lato", sans-serif;
 }
 
 nav {
@@ -580,10 +580,72 @@ section.section-1 .fun-section .info .desktop-text {
   }
 }
 
+.section-2 {
+  margin: 30px auto;
+}
+
+.section-2 .stars-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  gap: 1rem;
+  text-align: center;
+}
+
+.section-2 .stars-section .stars-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.section-2 .stars-section .stars-item .stars-reviews p {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: italic;
+  color: #7f939e;
+}
+
+@media (min-width: 320px) {
+  .section-2 .stars-section .stars-item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-2 .stars-section .stars-item {
+    width: 20%;
+  }
+}
+
 body .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
