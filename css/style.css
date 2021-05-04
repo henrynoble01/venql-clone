@@ -582,6 +582,8 @@ section.section-1 .fun-section .info .desktop-text {
 
 .section-2 {
   margin: 30px auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .section-2 .stars-section {
@@ -642,6 +644,22 @@ section.section-1 .fun-section .info .desktop-text {
   .section-2 .stars-section .stars-item {
     width: 20%;
   }
+}
+
+.section-2 .text-section {
+  text-align: center;
+}
+
+.section-2 .text-section h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #3a4953;
+}
+
+.section-2 .text-section p span {
+  color: #41af4b;
+  font-weight: 800;
+  font-size: 1rem;
 }
 
 body .container {

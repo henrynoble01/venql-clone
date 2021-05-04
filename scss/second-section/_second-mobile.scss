@@ -4,6 +4,8 @@
 
 .section-2 {
   margin: 30px auto;
+  padding-right: 15px;
+  padding-left: 15px;
 
   //   where the stars reviews are
   .stars-section {
@@ -24,7 +26,6 @@
       align-items: center;
       width: 50%;
       margin-bottom: 20px;
-
       //   .stars-imgs{
       //       img{
 
@@ -51,6 +52,24 @@
     @media (min-width: 768px) {
       .stars-item {
         width: 20%;
+      }
+    }
+  }
+
+  .text-section {
+    text-align: center;
+
+    h3 {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: $text-dark;
+    }
+
+    p {
+      span {
+        color: $text-green;
+        font-weight: 800;
+        font-size: 1rem;
       }
     }
   }
