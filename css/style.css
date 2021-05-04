@@ -41,15 +41,23 @@ nav .content-nav .right-nav {
 }
 
 nav .content-nav .right-nav button {
-  border: 2px solid #fff;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  color: white;
-  font-weight: 600;
-  background: transparent;
-  text-transform: uppercase;
+  display: none;
+}
+
+@media (min-width: 300px) {
+  nav .content-nav .right-nav button {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 }
 
 nav .content-nav .right-nav .free-trial-btn {
@@ -305,6 +313,7 @@ nav .content-nav .left-desktop .get-support {
     font-size: 13px;
     text-transform: uppercase;
     outline: none;
+    white-space: nowrap;
   }
   nav .content-nav div.left-desktop .free-trial {
     border: 2px solid none;
@@ -318,6 +327,7 @@ nav .content-nav .left-desktop .get-support {
     font-size: 13px;
     text-transform: uppercase;
     outline: none;
+    white-space: nowrap;
   }
   nav .content-nav div.left-desktop .get-support {
     display: none;
@@ -660,6 +670,16 @@ section.section-1 .fun-section .info .desktop-text {
   color: #41af4b;
   font-weight: 800;
   font-size: 1rem;
+}
+
+.section-3 {
+  display: none;
+}
+
+@media (min-width: 380px) {
+  .section-3 {
+    display: block;
+  }
 }
 
 body .container {

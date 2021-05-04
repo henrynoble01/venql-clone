@@ -67,12 +67,14 @@ nav {
           @include btn-nav-desktop($text-white, transparent);
           text-transform: uppercase;
           outline: none;
+          white-space: nowrap;
         }
 
         .free-trial {
           @include btn-nav-desktop(none, $background-green);
           text-transform: uppercase;
           outline: none;
+          white-space: nowrap;
         }
 
         .get-support {

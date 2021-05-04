@@ -29,9 +29,17 @@ nav {
       gap: 2rem;
 
       button {
-        @include btn-nav(#fff);
-        background: transparent;
-        text-transform: uppercase;
+        display: none;
+      }
+
+      @media (min-width: 300px) {
+        button {
+          display: inline-block;
+          @include btn-nav(#fff);
+          background: transparent;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
       }
 
       .free-trial-btn {

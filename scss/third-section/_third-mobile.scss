@@ -1,0 +1,13 @@
+.section-3 {
+  display: none;
+}
+@media (min-width: 380px) {
+  .section-3 {
+    display: block;
+
+    ul.third-list {
+      li.list-item {
+      }
+    }
+  }
+}
