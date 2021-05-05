@@ -116,7 +116,7 @@ nav .content-nav .toggle {
   overflow: hidden;
   position: absolute;
   background-color: #ffffff;
-  top: 70px;
+  top: 65px;
   width: 100%;
   left: 0;
   padding-left: 30px;
@@ -355,7 +355,7 @@ nav .content-nav .left-desktop .get-support {
 }
 
 section.section-1 {
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 section.section-1 .img-section .mobile-img {
@@ -712,6 +712,14 @@ section.section-1 .fun-section .info .desktop-text {
     padding: 0;
     margin: 0 auto;
   }
+  .section-3.sticky {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 50px;
+  }
   .third-list {
     list-style: none;
     display: -webkit-box;
@@ -751,6 +759,7 @@ section.section-1 .fun-section .info .desktop-text {
     font-weight: 700;
     text-transform: uppercase;
     padding: 2px 2px;
+    margin-bottom: 10px;
   }
 }
 
@@ -794,7 +803,7 @@ section.section-1 .fun-section .info .desktop-text {
     height: 2px;
     display: block;
     position: absolute;
-    top: 77%;
+    top: 79%;
     z-index: -2;
     background: #e0f0f9;
     width: 22%;
@@ -807,6 +816,12 @@ section.section-1 .fun-section .info .desktop-text {
 }
 
 @media (min-width: 1250px) {
+  .section-3.sticky {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.98);
+    top: 64px;
+    height: 90px;
+  }
   .third-list .list-item a .list-container .title-text {
     white-space: normal;
     text-align: center;

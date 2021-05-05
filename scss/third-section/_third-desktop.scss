@@ -1,4 +1,13 @@
 @media (min-width: 1250px) {
+  .section-3 {
+    &.sticky {
+      padding: 20px;
+      background: rgba($color: $background-white, $alpha: 0.98);
+      top: 64px;
+      height: 90px;
+    }
+  }
+
   .third-list {
     .list-item {
       a {
@@ -19,18 +28,6 @@
 
           .number-holder {
             padding: 15px;
-
-            // &::after,
-            // &::before {
-            //   content: "";
-            //   height: 2px;
-            //   display: block;
-            //   position: absolute;
-            //   top: 77%;
-            //   z-index: -2;
-            //   background: $background-light-blue;
-            //   width: 25%;
-            // }
 
             .number {
               font-size: 16px;
