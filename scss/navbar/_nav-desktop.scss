@@ -1,7 +1,7 @@
 nav {
   .content-nav {
     // the desktop version of the navbar
-    @media (min-width: 1200px) {
+    @media (min-width: 1150px) {
       div.right-nav {
         display: none;
       }

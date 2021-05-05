@@ -1,0 +1,46 @@
+@media (min-width: 1250px) {
+  .third-list {
+    .list-item {
+      a {
+        .list-container {
+          .title-text {
+            white-space: normal;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            .mobile-text {
+              display: none;
+            }
+
+            .desktop-text {
+              display: block;
+            }
+          }
+
+          .number-holder {
+            padding: 15px;
+
+            // &::after,
+            // &::before {
+            //   content: "";
+            //   height: 2px;
+            //   display: block;
+            //   position: absolute;
+            //   top: 77%;
+            //   z-index: -2;
+            //   background: $background-light-blue;
+            //   width: 25%;
+            // }
+
+            .number {
+              font-size: 16px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @desktop = padding : 10px;

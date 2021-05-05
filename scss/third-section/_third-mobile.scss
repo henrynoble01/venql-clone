@@ -1,12 +1,93 @@
 .section-3 {
   display: none;
 }
+
 @media (min-width: 380px) {
   .section-3 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
 
-    ul.third-list {
-      li.list-item {
+    .sticky {
+    }
+  }
+
+  .third-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 8px;
+    width: 100%;
+
+    .list-item {
+      a {
+        text-decoration: none;
+        color: $text-gray;
+        .list-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .title-text {
+            display: flex;
+            white-space: nowrap;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 2px 2px;
+
+            @media (min-width: 761px) {
+              & {
+                font-family: 900;
+                font-size: 13px;
+              }
+            }
+            @media (min-width: 995px) {
+              & {
+                font-family: 900;
+                font-size: 15px;
+              }
+            }
+
+            .desktop-text {
+              display: none;
+            }
+          }
+
+          .number-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $background-light-gray;
+            color: $text-white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            padding: 5px;
+
+            &::after,
+            &::before {
+              content: "";
+              height: 2px;
+              display: block;
+              position: absolute;
+              top: 77%;
+              z-index: -2;
+              background: $background-light-blue;
+              width: 22%;
+              overflow: hidden;
+            }
+
+            .number {
+              font-size: 12px;
+              display: none;
+            }
+          }
+        }
       }
     }
   }

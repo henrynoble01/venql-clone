@@ -1,3 +1,23 @@
+body .container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1800px) {
+  body .container {
+    max-width: 1500px;
+  }
+}
+
+body .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 *,
 *::after,
 *::before {
@@ -232,7 +252,7 @@ nav .content-nav .left-desktop .get-support {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   nav .content-nav div.right-nav {
     display: none;
   }
@@ -678,27 +698,133 @@ section.section-1 .fun-section .info .desktop-text {
 
 @media (min-width: 380px) {
   .section-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .third-list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 2px 8px;
+    width: 100%;
+  }
+  .third-list .list-item a {
+    text-decoration: none;
+    color: #485660;
+  }
+  .third-list .list-item a .list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .third-list .list-item a .list-container .title-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 2px;
+  }
+}
+
+@media (min-width: 380px) and (min-width: 761px) {
+  .third-list .list-item a .list-container .title-text {
+    font-family: 900;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 380px) and (min-width: 995px) {
+  .third-list .list-item a .list-container .title-text {
+    font-family: 900;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 380px) {
+  .third-list .list-item a .list-container .title-text .desktop-text {
+    display: none;
+  }
+  .third-list .list-item a .list-container .number-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #7f939ee6;
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .third-list .list-item a .list-container .number-holder::after, .third-list .list-item a .list-container .number-holder::before {
+    content: "";
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 77%;
+    z-index: -2;
+    background: #e0f0f9;
+    width: 22%;
+    overflow: hidden;
+  }
+  .third-list .list-item a .list-container .number-holder .number {
+    font-size: 12px;
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .third-list .list-item a .list-container .title-text {
+    white-space: normal;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .third-list .list-item a .list-container .title-text .mobile-text {
+    display: none;
+  }
+  .third-list .list-item a .list-container .title-text .desktop-text {
     display: block;
   }
-}
-
-body .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 1800px) {
-  body .container {
-    max-width: 1500px;
+  .third-list .list-item a .list-container .number-holder {
+    padding: 15px;
   }
-}
-
-body .container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  .third-list .list-item a .list-container .number-holder .number {
+    font-size: 16px;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
