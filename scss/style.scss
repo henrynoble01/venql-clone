@@ -1,10 +1,14 @@
 body {
+  main {
+    overflow-x: hidden;
+  }
   .container {
     width: 100%;
     // padding-right: 15px;
     // padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    scroll-behavior: smooth;
   }
 
   //   @media (min-width: 576px) {
@@ -57,3 +61,7 @@ body {
 @import "./second-section/second-desktop";
 @import "./third-section/third-mobile";
 @import "./third-section/third-desktop";
+@import "./fourth-section/fourth-mobile";
+@import "./fourth-section/fourth-desktop";
+@import "./fifth-section/fifth-mobile";
+@import "./fifth-section/fifth-desktop";
