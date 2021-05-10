@@ -42,3 +42,19 @@
   font-size: 16px;
   outline: none;
 }
+
+@mixin link-style {
+  text-decoration: underline;
+  color: $text-blue;
+  font-weight: 600;
+  font-size: 16px;
+
+  &::after {
+    content: url("../img/arrow-right.svg");
+    vertical-align: -8px;
+    margin-left: 2px;
+    filter: invert(36%) sepia(90%) saturate(779%) hue-rotate(160deg)
+      brightness(97%) contrast(109%);
+    width: 70%;
+  }
+}
