@@ -74,7 +74,8 @@
       background-position-y: 30px;
       background-size: 610px;
       background-position-x: 20px;
-      background-repeat-y: no-repeat;
+      // background-repeat-y: no-repeat;
+      background-repeat: repeat-x;
       img {
         width: 150px;
         margin-left: 128px;
