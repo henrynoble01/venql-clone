@@ -1,0 +1,111 @@
+.section-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  margin-bottom: 40px;
+
+  @media (min-width: 560px) {
+    width: 80%;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-eight-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+
+    // on break-point become flex directio row but normally column
+    @media (min-width: 300px) {
+      & {
+        flex-direction: row;
+      }
+    }
+    .text {
+      // on normal width 100%
+      width: 100%;
+      //   on break-point width 50%
+      @media (min-width: 300px) {
+        & {
+          width: 50%;
+        }
+      }
+      p {
+        text-align: left;
+        word-spacing: 1px;
+        line-height: 23px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $text-dark;
+      }
+    }
+    .eight-img-top {
+      width: 100%;
+      @media (min-width: 300px) {
+        & {
+          width: 50%;
+        }
+      }
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 5px 5px #ddd;
+        @media (min-width: 300px) {
+          & {
+            border-radius: 50%;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-eight-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media (min-width: 765px) {
+      & {
+        flex-direction: row;
+      }
+    }
+
+    .eight-img-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+      }
+    }
+
+    .bottom-links {
+      text-align: center;
+      a {
+        text-align: center;
+        @include link-style;
+      }
+    }
+  }
+  .eight-desktop-img {
+    display: none;
+  }
+}
