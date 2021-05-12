@@ -1,0 +1,87 @@
+.section-7 {
+  width: 100%;
+  margin: auto;
+  background-color: $background-blue;
+  position: relative;
+
+  @media (min-width: 400px) {
+    & {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .seventh-curved-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 35%;
+    }
+  }
+
+  .content-container {
+    padding-top: 30px;
+
+    h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: $text-dark;
+      z-index: 1;
+      position: relative;
+    }
+
+    .img-contain {
+      margin-top: -70px;
+      margin-bottom: -80px;
+      z-index: -20;
+      img {
+        width: 100%;
+      }
+    }
+
+    .seventh-text {
+      p {
+        text-align: center;
+        line-height: 28px;
+        font-size: 1.1rem;
+        color: $text-gray;
+
+        a {
+          color: $text-blue;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .vend-product-link {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      a {
+        @include link-style;
+      }
+    }
+
+    .img-slider {
+      overflow-x: hidden;
+      background-image: url("../../img/seventh_illustration_banner.png");
+      background-position-y: 30px;
+      background-size: 610px;
+      background-position-x: 20px;
+      background-repeat-y: no-repeat;
+      img {
+        width: 150px;
+        margin-left: 128px;
+      }
+    }
+  }
+  .seventh-desktop-img {
+    display: none;
+  }
+}
