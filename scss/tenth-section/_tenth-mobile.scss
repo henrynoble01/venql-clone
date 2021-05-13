@@ -1,4 +1,4 @@
-.section-8 {
+.section-10 {
   display: none;
 
   @media (min-width: 765px) {
@@ -24,7 +24,7 @@
         align-items: center;
       }
 
-      .top-eight-section {
+      .top-tenth-section {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -56,7 +56,7 @@
             color: $text-dark;
           }
         }
-        .eight-img-top {
+        .tenth-img-top {
           width: 100%;
           @media (min-width: 300px) {
             & {
@@ -78,7 +78,7 @@
         }
       }
 
-      .bottom-eight-section {
+      .bottom-tenth-section {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -92,7 +92,7 @@
           }
         }
 
-        .eight-img-bottom {
+        .tenth-img-bottom {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -109,7 +109,7 @@
           }
         }
       }
-      .eight-desktop-img {
+      .tenth-desktop-img {
         display: none;
       }
     }
