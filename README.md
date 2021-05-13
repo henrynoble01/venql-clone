@@ -10,3 +10,5 @@ will delete it in two months time
 -learnt the importance of position relative , absolute and fixed in a web page
 -know that i need to learn ui design
 -learnt how to change svg colors based on screen size
+
+after this project go back to section 2, 3 and 4 and work on the sticky nav on scrollbars

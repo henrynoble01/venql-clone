@@ -5,6 +5,17 @@
       background: rgba($color: $background-white, $alpha: 0.98);
       top: 64px;
       height: 90px;
+      right: 0;
+
+      .third-list {
+        .number-holder {
+          &::after,
+          &::before {
+            top: 84% !important;
+            height: 7px !important;
+          }
+        }
+      }
     }
   }
 
@@ -23,11 +34,18 @@
 
             .desktop-text {
               display: block;
+              padding: 6px;
             }
           }
 
           .number-holder {
             padding: 15px;
+
+            &::after,
+            &::before {
+              top: 72%;
+              height: 7px;
+            }
 
             .number {
               font-size: 16px;

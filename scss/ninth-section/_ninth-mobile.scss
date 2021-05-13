@@ -1,0 +1,100 @@
+.section-9 {
+  //   display: none;
+
+  background-color: rgba($color: $background-gray, $alpha: 1.1);
+  color: $text-white;
+  position: relative;
+
+  .ninth-bottom-curve {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+
+    img {
+      width: 100%;
+      float: right;
+    }
+  }
+
+  .content-container {
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 30px;
+    background: url("../../img/ninth-US-MultiOutlet-AnimationAsset1.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+      font-size: 42px;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .text {
+      margin-bottom: 20px;
+      p {
+        line-height: 28px;
+        font-size: 18px;
+        font-weight: 500px;
+      }
+    }
+
+    .vend-ninth-link {
+      // padding-bottom: ;
+      a {
+        color: $text-green !important;
+        @include link-style;
+
+        &::after {
+          filter: invert(62%) sepia(7%) saturate(7445%) hue-rotate(79deg)
+            brightness(92%) contrast(62%);
+        }
+      }
+    }
+
+    .icon-pop-section {
+      height: 200px;
+
+      background-image: url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg"),
+        url("../../img/ninth_shop_house-home.svg");
+      background-repeat: no-repeat;
+      //   background-size: contain;
+      background-size: 32px;
+      background-position: top 47% left 7%, top 17% left 23%, top 45% left 40%,
+        bottom 18% left 53%, top 19% left 61%, bottom 25% left 71%,
+        bottom 25% left 86%, top 23% left 96%;
+      animation: popout 1s ease;
+    }
+  }
+
+  @keyframes popout {
+    from {
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  //   @-webkit-keyframes popout {
+  //     from {
+  //       -webkit-transform: scale(0);
+  //     }
+  //     80% {
+  //       -webkit-transform: scale(1.2);
+  //     }
+  //     to {
+  //       -webkit-transform: scale(1);
+  //     }
+  //   }
+}

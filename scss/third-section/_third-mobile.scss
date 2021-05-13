@@ -13,13 +13,14 @@
     margin: 0 auto;
 
     &.sticky {
-      padding: 40px 20px;
+      padding: 40px 0;
       background: rgba($color: $background-white, $alpha: 0.97);
       position: fixed;
       top: 60px;
       left: 0;
       height: 50px;
       z-index: 100;
+      width: 100%;
     }
   }
 
