@@ -2,6 +2,7 @@
   background-color: rgba($color: $background-light-green, $alpha: 1.1);
   color: $text-gray;
   position: relative;
+  padding-bottom: 40px;
 
   .eleventh-bottom-curve {
     position: absolute;
@@ -28,33 +29,63 @@
     .flex-content {
       display: flex;
       flex-direction: column-reverse;
-      gap: 20px;
 
       .img-content {
+        bottom: -255px;
         position: relative;
-        bottom: 0;
+        margin-top: -230px;
+
         img {
           width: 110%;
-          margin-left: -60px;
-          margin-bottom: -50px;
+          margin-left: -22%;
         }
       }
+    }
 
-      .text-section {
+    .text-section {
+      text-align: center;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
         text-align: center;
-        p {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 20px;
-          text-align: center;
-          line-height: 27px;
-          margin-bottom: 25px;
-        }
-        a {
-          @include link-style;
-          text-align: center;
-        }
+        line-height: 27px;
+        margin-bottom: 25px;
       }
+      a {
+        @include link-style;
+        text-align: center;
+      }
+    }
+  }
+
+  .float-img-section {
+    & > * {
+      margin: 10px;
+    }
+    text-align: center;
+    position: relative;
+    bottom: -264px;
+    s p {
+    }
+    .img-integrates {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+
+      // .img {
+      // }
+
+      // .img-1 {
+      //   img {
+      //   }
+      // }
+
+      // .img-2 {
+      //   img {
+      //   }
+      // }
     }
   }
 }

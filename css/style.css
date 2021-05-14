@@ -1759,6 +1759,7 @@ section.section-1 .fun-section .info .desktop-text {
   background-color: #3a4953;
   color: #fff;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .section-9 .ninth-bottom-curve {
@@ -2139,6 +2140,7 @@ section.section-1 .fun-section .info .desktop-text {
   background-color: #b8e9b4;
   color: #485660;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .section-11 .eleventh-bottom-curve {
@@ -2173,25 +2175,24 @@ section.section-1 .fun-section .info .desktop-text {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  gap: 20px;
 }
 
 .section-11 .content-container .flex-content .img-content {
+  bottom: -255px;
   position: relative;
-  bottom: 0;
+  margin-top: -230px;
 }
 
 .section-11 .content-container .flex-content .img-content img {
   width: 110%;
-  margin-left: -60px;
-  margin-bottom: -50px;
+  margin-left: -22%;
 }
 
-.section-11 .content-container .flex-content .text-section {
+.section-11 .content-container .text-section {
   text-align: center;
 }
 
-.section-11 .content-container .flex-content .text-section p {
+.section-11 .content-container .text-section p {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
@@ -2200,7 +2201,7 @@ section.section-1 .fun-section .info .desktop-text {
   margin-bottom: 25px;
 }
 
-.section-11 .content-container .flex-content .text-section a {
+.section-11 .content-container .text-section a {
   text-decoration: underline;
   color: #008cc5;
   font-weight: 600;
@@ -2208,12 +2209,109 @@ section.section-1 .fun-section .info .desktop-text {
   text-align: center;
 }
 
-.section-11 .content-container .flex-content .text-section a::after {
+.section-11 .content-container .text-section a::after {
   content: url("../img/arrow-right.svg");
   vertical-align: -8px;
   margin-left: 2px;
   -webkit-filter: invert(36%) sepia(90%) saturate(779%) hue-rotate(160deg) brightness(97%) contrast(109%);
           filter: invert(36%) sepia(90%) saturate(779%) hue-rotate(160deg) brightness(97%) contrast(109%);
   width: 70%;
+}
+
+.section-11 .float-img-section {
+  text-align: center;
+  position: relative;
+  bottom: -264px;
+}
+
+.section-11 .float-img-section > * {
+  margin: 10px;
+}
+
+.section-11 .float-img-section .img-integrates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .section-11 .content-container h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+  .section-11 .content-container .flex-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-11 .content-container .flex-content .img-content {
+    bottom: 0;
+    position: relative;
+    margin-top: 0;
+  }
+  .section-11 .content-container .flex-content .img-content img {
+    width: 110%;
+    margin-left: -22%;
+  }
+  .section-11 .content-container .text-section {
+    text-align: left;
+  }
+  .section-11 .content-container .text-section p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .section-11 .content-container .text-section a {
+    text-decoration: underline;
+    color: #008cc5;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+  }
+  .section-11 .content-container .text-section a::after {
+    content: url("../img/arrow-right.svg");
+    vertical-align: -8px;
+    margin-left: 2px;
+    -webkit-filter: invert(36%) sepia(90%) saturate(779%) hue-rotate(160deg) brightness(97%) contrast(109%);
+            filter: invert(36%) sepia(90%) saturate(779%) hue-rotate(160deg) brightness(97%) contrast(109%);
+    width: 70%;
+  }
+  .section-11 .float-img-section {
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+  }
+  .section-11 .float-img-section > * {
+    margin: 10px;
+  }
+  .section-11 .float-img-section .img-integrates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
