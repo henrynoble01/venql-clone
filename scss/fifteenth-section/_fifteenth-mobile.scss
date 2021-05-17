@@ -1,0 +1,17 @@
+.section-15 {
+  position: relative;
+  height: 150px;
+  .fifteenth-bottom-curve {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+
+    img {
+      width: 100%;
+      float: right;
+      filter: invert(38%) sepia(4%) saturate(1934%) hue-rotate(55deg)
+        brightness(140%) contrast(100%);
+    }
+  }
+}

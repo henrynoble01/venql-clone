@@ -1,0 +1,57 @@
+.section-16 {
+  background-color: $background-light-green;
+  margin-bottom: 20px;
+  .content-container {
+    padding: 20px;
+    h2 {
+      text-align: center;
+      font-weight: 800;
+      font-size: 2.4rem;
+      color: $text-dark;
+      margin-bottom: 20px;
+    }
+
+    .flex-content {
+      .text-section {
+        & > * {
+          margin: 10px;
+        }
+        text-align: center;
+
+        h2 {
+          display: none;
+        }
+
+        p {
+          font-size: 1rem;
+          color: $text-dark;
+          font-weight: 500;
+          line-height: 25px;
+        }
+
+        .flex-details {
+          .btn-green {
+            display: block;
+            @include btn-mobile($text-white, $background-green);
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: 700;
+          }
+
+          .call {
+            p {
+              display: inline-block;
+              color: $text-green;
+              font-size: 1.2rem;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+
+      .img-section {
+        display: none;
+      }
+    }
+  }
+}

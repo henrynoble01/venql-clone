@@ -3111,4 +3111,171 @@ section.section-1 .fun-section .info .desktop-text {
             box-shadow: 3px 5px 5px #ddd;
   }
 }
+
+.section-15 {
+  position: relative;
+  height: 150px;
+}
+
+.section-15 .fifteenth-bottom-curve {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+}
+
+.section-15 .fifteenth-bottom-curve img {
+  width: 100%;
+  float: right;
+  -webkit-filter: invert(38%) sepia(4%) saturate(1934%) hue-rotate(55deg) brightness(140%) contrast(100%);
+          filter: invert(38%) sepia(4%) saturate(1934%) hue-rotate(55deg) brightness(140%) contrast(100%);
+}
+
+.section-16 {
+  background-color: #b8e9b4;
+  margin-bottom: 20px;
+}
+
+.section-16 .content-container {
+  padding: 20px;
+}
+
+.section-16 .content-container h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #3a4953;
+  margin-bottom: 20px;
+}
+
+.section-16 .content-container .flex-content .text-section {
+  text-align: center;
+}
+
+.section-16 .content-container .flex-content .text-section > * {
+  margin: 10px;
+}
+
+.section-16 .content-container .flex-content .text-section h2 {
+  display: none;
+}
+
+.section-16 .content-container .flex-content .text-section p {
+  font-size: 1rem;
+  color: #3a4953;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.section-16 .content-container .flex-content .text-section .flex-details .btn-green {
+  display: block;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #41af4b;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.section-16 .content-container .flex-content .text-section .flex-details .call p {
+  display: inline-block;
+  color: #41af4b;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.section-16 .content-container .flex-content .img-section {
+  display: none;
+}
+
+@media (min-width: 768px) and (min-width: 989px) {
+  .section-16 .content-container h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-16 .content-container .flex-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .section-16 .content-container .flex-content .text-section {
+    width: 60%;
+  }
+  .section-16 .content-container .flex-content .text-section > * {
+    margin: 10px 10px 40px 10px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 989px) {
+  .section-16 .content-container .flex-content .text-section h2 {
+    display: block;
+    text-align: left;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: #3a4953;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-16 .content-container .flex-content .text-section p {
+    text-align: left;
+  }
+  .section-16 .content-container .flex-content .text-section .flex-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 989px) {
+  .section-16 .content-container .flex-content .text-section .flex-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 989px) {
+  .section-16 .content-container .flex-content .text-section .flex-details .btn-green {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-16 .content-container .flex-content .text-section .flex-details .call p {
+    display: inline-block;
+    color: #41af4b;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 989px) {
+  .section-16 .content-container .flex-content .text-section .flex-details .call {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-16 .content-container .flex-content .img-section {
+    display: block;
+    width: 40%;
+  }
+  .section-16 .content-container .flex-content .img-section img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
