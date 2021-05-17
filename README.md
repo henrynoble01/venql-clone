@@ -12,3 +12,5 @@ will delete it in two months time
 -learnt how to change svg colors based on screen size
 
 after this project go back to section 2, 3 and 4 and work on the sticky nav on scrollbars
+
+- i just realized this today images should always be 100% but their width should be controlled using a parent element that means that images in html should always be wraped inside a parent element

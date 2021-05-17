@@ -1,0 +1,140 @@
+.section-13 {
+  background: rgba($color: $background-light-blue, $alpha: 1);
+  position: relative;
+  margin-bottom: 20px;
+
+  .thirteen-bottom-curve {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+
+    img {
+      width: 100%;
+      float: right;
+    }
+  }
+
+  .content-container {
+    padding: 0 20px;
+    .img-section {
+      position: relative;
+      padding-bottom: 68%;
+
+      .img {
+        position: absolute;
+      }
+
+      //   shoe image
+      .img-1 {
+        // position: absolute;
+        z-index: 4;
+        width: 60%;
+        right: 0;
+        bottom: 0;
+        img {
+          width: 100%;
+        }
+      }
+
+      //   i-phone image
+      .img-2 {
+        // position: absolute;
+        z-index: 3;
+        width: 21%;
+        left: 0;
+        bottom: 0;
+        img {
+          width: 100%;
+        }
+      }
+
+      //   i-pad image
+      .img-3 {
+        // position: absolute;
+        z-index: 2;
+        left: 35px;
+        bottom: 20px;
+        width: 60%;
+        img {
+          width: 100%;
+        }
+      }
+
+      //   mack-book images
+      .img-4 {
+        // position: absolute;
+        z-index: 1;
+        width: 99%;
+        right: -70px;
+        top: -38px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      //   @media (min-width: 767px) {
+      //     & {
+      //       .img {
+      //         position: unset;
+      //         display: flex;
+      //         flex-direction: row-reverse;
+      //       }
+      //     }
+      //   }
+    }
+
+    h2 {
+      //   font-size: 2rem;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      color: $text-dark;
+      margin-bottom: 10px;
+      line-height: 34px;
+    }
+
+    .text-area {
+      text-align: center;
+      p {
+        color: $text-gray;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-size: 0.85rem !important;
+        @include link-style;
+      }
+    }
+
+    .partners-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding-bottom: 20px;
+
+      .img {
+        width: 60%;
+        img {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 545px) {
+        & {
+          .img {
+            width: 40%;
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
