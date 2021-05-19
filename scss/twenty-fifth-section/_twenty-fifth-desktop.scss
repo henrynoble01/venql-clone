@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+  .section-25 {
+    .content-container {
+      .contact-section {
+        gap: 10%;
+
+        & > * {
+          flex: 1 1 40%;
+        }
+
+        .coloured-box {
+          width: 100%;
+          padding: 30px;
+          max-width: 429px;
+        }
+
+        .green-content {
+          button {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+
+          p {
+            margin-bottom: 45px;
+          }
+        }
+        .blue-content {
+          button {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

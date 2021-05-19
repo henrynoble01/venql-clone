@@ -1,0 +1,47 @@
+@media (min-width: 765px) {
+  .section-19 {
+    .content-container {
+      padding: 3px 20px;
+
+      .flex-content {
+        margin-left: -10%;
+
+        & > * {
+          flex: 1 1 45%;
+        }
+
+        .img-container {
+          width: 60%;
+
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: -72px;
+
+          img {
+            width: 80%;
+          }
+        }
+
+        .text-content {
+          width: 100%;
+          text-align: left;
+
+          padding-right: 15%;
+
+          p {
+            font-size: 1.1rem;
+
+            line-height: 32px;
+            margin-bottom: 20px;
+          }
+
+          a {
+            font-size: 15px !important;
+
+            @include link-style;
+          }
+        }
+      }
+    }
+  }
+}
